@@ -75,7 +75,7 @@ try {
 }
 
 // Contoh header CORS di skrip PHP
-header("Access-Control-Allow-Origin: https://github.com/viddokta"); 
+header("Access-Control-Allow-Origin: https://kenangansenja-midtrans.vercel.app"); 
 header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With");
 ?>
