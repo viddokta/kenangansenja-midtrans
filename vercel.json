@@ -3,6 +3,6 @@
         "php/*.php": { "runtime": "vercel-php@0.6.0" },
     },
     "routes": [
-        { "php": "/(.*)", "dest": "/php/placeOrder.php" }
+        { "src": "/(.*)", "dest": "/php/placeOrder.php" }
     ],
 }
