@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         formData.append('items', JSON.stringify(items));
 
         try {
-            const response = await fetch('./SSP/placeOrder.php', {
+            const response = await fetch('../php/placeOrder.php', {
                 method: 'POST',
                 body: formData,
             });
