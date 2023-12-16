@@ -20,6 +20,10 @@ require_once dirname(__FILE__) . '/midtrans-php-master/Midtrans.php';
 \Midtrans\Config::$is3ds = true;
 
 try {
+    header("Access-Control-Allow-Origin: {$_SERVER['HTTP_ORIGIN']}");
+    header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+    header('Access-Control-Allow-Credentials: true');
+    header('Access-Control-Max-Age: 86400'); 
     // Validate input
     if (!isset($_POST['name'], $_POST['email'], $_POST['phone'], $_POST['items'])) {
         http_response_code(400);
